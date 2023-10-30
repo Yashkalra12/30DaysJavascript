@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/todo-app-react-fee-ete/static/css/main.0a78e470.css",
+    "main.js": "/todo-app-react-fee-ete/static/js/main.a8636721.js",
+    "index.html": "/todo-app-react-fee-ete/index.html",
+    "main.0a78e470.css.map": "/todo-app-react-fee-ete/static/css/main.0a78e470.css.map",
+    "main.a8636721.js.map": "/todo-app-react-fee-ete/static/js/main.a8636721.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a78e470.css",
+    "static/js/main.a8636721.js"
+  ]
+}

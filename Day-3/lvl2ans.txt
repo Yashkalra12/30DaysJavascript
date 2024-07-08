@@ -1,0 +1,163 @@
+
+1. **Calculate the area of a triangle:**
+
+```javascript
+let base = prompt('Enter base:');
+let height = prompt('Enter height:');
+let area = 0.5 * base * height;
+console.log(`The area of the triangle is ${area}`);
+```
+
+2. **Calculate the perimeter of a triangle:**
+
+```javascript
+let sideA = prompt('Enter side a:');
+let sideB = prompt('Enter side b:');
+let sideC = prompt('Enter side c:');
+let perimeter = parseFloat(sideA) + parseFloat(sideB) + parseFloat(sideC);
+console.log(`The perimeter of the triangle is ${perimeter}`);
+```
+
+3. **Calculate the area and perimeter of a rectangle:**
+
+```javascript
+let length = prompt('Enter length:');
+let width = prompt('Enter width:');
+let areaRectangle = length * width;
+let perimeterRectangle = 2 * (parseFloat(length) + parseFloat(width));
+console.log(`The area of the rectangle is ${areaRectangle}`);
+console.log(`The perimeter of the rectangle is ${perimeterRectangle}`);
+```
+
+4. **Calculate the area and circumference of a circle:**
+
+```javascript
+let radius = prompt('Enter radius:');
+const PI = 3.14;
+let areaCircle = PI * radius * radius;
+let circumference = 2 * PI * radius;
+console.log(`The area of the circle is ${areaCircle}`);
+console.log(`The circumference of the circle is ${circumference}`);
+```
+
+5. **Calculate the slope, x-intercept, and y-intercept of y = 2x - 2:**
+
+```javascript
+let slope = 2;
+let xIntercept = -2 / 2;
+let yIntercept = -2;
+console.log(`The slope is ${slope}`);
+console.log(`The x-intercept is ${xIntercept}`);
+console.log(`The y-intercept is ${yIntercept}`);
+```
+
+6. **Calculate the slope between two points:**
+
+```javascript
+let x1 = 2, y1 = 2;
+let x2 = 6, y2 = 10;
+let slopeBetweenPoints = (y2 - y1) / (x2 - x1);
+console.log(`The slope between point (${x1}, ${y1}) and point (${x2}, ${y2}) is ${slopeBetweenPoints}`);
+```
+
+7. **Compare slopes:**
+
+```javascript
+console.log(`The slope of y = 2x - 2 is ${slope}`);
+console.log(`The slope between the two points is ${slopeBetweenPoints}`);
+console.log(`Are the slopes equal? ${slope === slopeBetweenPoints}`);
+```
+
+8. **Calculate the value of y:**
+
+```javascript
+function calculateY(x) {
+  return x**2 + 6*x + 9;
+}
+
+for (let x = -10; x <= 10; x++) {
+  let y = calculateY(x);
+  if (y === 0) {
+    console.log(`When x is ${x}, y is 0`);
+  }
+}
+```
+
+9. **Calculate pay:**
+
+```javascript
+let hours = prompt('Enter hours:');
+let ratePerHour = prompt('Enter rate per hour:');
+let pay = hours * ratePerHour;
+console.log(`Your weekly earning is ${pay}`);
+```
+
+10. **Check name length:**
+
+```javascript
+let name = prompt('Enter your name:');
+if (name.length > 7) {
+  console.log('Your name is long');
+} else {
+  console.log('Your name is short');
+}
+```
+
+11. **Compare first name and last name length:**
+
+```javascript
+let firstName = 'Asabeneh';
+let lastName = 'Yetayeh';
+if (firstName.length > lastName.length) {
+  console.log(`Your first name, ${firstName} is longer than your family name, ${lastName}`);
+} else {
+  console.log(`Your first name, ${firstName} is shorter than your family name, ${lastName}`);
+}
+```
+
+12. **Compare ages:**
+
+```javascript
+let myAge = 250;
+let yourAge = 25;
+console.log(`I am ${myAge - yourAge} years older than you.`);
+```
+
+13. **Check driving age:**
+
+```javascript
+let birthYear = prompt('Enter birth year:');
+let currentYear = new Date().getFullYear();
+let age = currentYear - birthYear;
+
+if (age >= 18) {
+  console.log(`You are ${age}. You are old enough to drive`);
+} else {
+  console.log(`You are ${age}. You will be allowed to drive after ${18 - age} years.`);
+}
+```
+
+14. **Calculate seconds lived:**
+
+```javascript
+let yearsLived = prompt('Enter number of years you live:');
+let secondsLived = yearsLived * 365 * 24 * 60 * 60;
+console.log(`You lived ${secondsLived} seconds.`);
+```
+
+15. **Create human-readable time formats:**
+
+```javascript
+let now = new Date();
+
+let year = now.getFullYear();
+let month = (now.getMonth() + 1).toString().padStart(2, '0');
+let date = now.getDate().toString().padStart(2, '0');
+let hours = now.getHours().toString().padStart(2, '0');
+let minutes = now.getMinutes().toString().padStart(2, '0');
+
+console.log(`${year}-${month}-${date} ${hours}:${minutes}`);
+console.log(`${date}-${month}-${year} ${hours}:${minutes}`);
+console.log(`${date}/${month}/${year} ${hours}:${minutes}`);
+```
+

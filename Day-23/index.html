@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Generator and Keyboard Key Code</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        #number-container {
+            margin-bottom: 20px;
+        }
+        .number-box {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            margin: 5px;
+            color: white;
+        }
+        .even {
+            background-color: green;
+        }
+        .odd {
+            background-color: yellow;
+            color: black;
+        }
+        .prime {
+            background-color: red;
+        }
+        .key-code {
+            font-size: 2rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="number-container"></div>
+    <div class="key-code">Press any key</div>
+    <script src="script.js"></script>
+</body>
+</html>

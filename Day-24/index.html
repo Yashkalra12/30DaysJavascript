@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Calculator on Different Planets</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        #calculator-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        input, select, button {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 1rem;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="calculator-container">
+        <h1>Weight Calculator on Different Planets</h1>
+        <input type="number" id="weight" placeholder="Enter your weight on Earth (kg)" />
+        <select id="planet">
+            <option value="" disabled selected>Select a planet</option>
+            <option value="0.38">Mercury</option>
+            <option value="0.91">Venus</option>
+            <option value="0.38">Mars</option>
+            <option value="2.34">Jupiter</option>
+            <option value="1.06">Saturn</option>
+            <option value="0.92">Uranus</option>
+            <option value="1.19">Neptune</option>
+        </select>
+        <button onclick="calculateWeight()">Calculate</button>
+        <div class="result" id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
